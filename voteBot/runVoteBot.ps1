@@ -6,5 +6,5 @@
     node voteBot.js | Out-Null
     "Loop $_ : Vote submitted"
     
-    Start-Sleep -Seconds 1
+    Start-Sleep -Milliseconds (Get-Random -Minimum 100 -Maximum 1000)
 }
